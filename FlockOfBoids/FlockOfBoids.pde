@@ -40,6 +40,7 @@ boolean avoidWalls = true;
 // 2. Only faces
 // 3. Only points
 int mode;
+int boidShape;
 
 int initBoidNum = 900; // amount of boids to start the program with
 ArrayList<Boid> flock;
@@ -98,6 +99,9 @@ void keyPressed() {
   switch (key) {
   case 'a':
     animate = !animate;
+    break;
+  case 'b':
+    boidShape = boidShape < 2 ? boidShape+1 : 0;
     break;
   case 's':
     if (scene.eye().reference() == null)

@@ -182,25 +182,101 @@ class Boid {
       noStroke();
       fill(avatarColor);
     }
+    
+    
+    
+    switch(boidShape) {
+    case 0:
+      beginShape(kind);
+      vertex(3 * sc, 0, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 0);
+  
+      vertex(3 * sc, 0, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, 0, 2 * sc);
+  
+      vertex(3 * sc, 0, 0);
+      vertex(-3 * sc, 0, 2 * sc);
+      vertex(-3 * sc, -2 * sc, 0);
+  
+      vertex(-3 * sc, 0, 2 * sc);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 0);
+      endShape();
+      break;
+    case 1:
+      //draw boid
+      beginShape(kind);
+      vertex(3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 0);
+      
+      vertex(3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 0);
+      vertex(3 * sc, -2 * sc, 0);
+      
+      vertex(3 * sc, 2 * sc, 2 * sc);
+      vertex(-3 * sc, 2 * sc, 2 * sc);
+      vertex(-3 * sc, -2 * sc, 2 * sc);
+      
+      vertex(3 * sc, 2 * sc, 2 * sc);
+      vertex(-3 * sc, -2 * sc, 2 * sc);
+      vertex(3 * sc, -2 * sc, 2 * sc);
+  
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, 2 * sc, 2 * sc);
+      vertex(3 * sc, 2 * sc, 0);
+      
+      vertex(-3 * sc, 2 * sc, 2 * sc);
+      vertex(3 * sc, 2 * sc, 0);
+      vertex(3 * sc, 2 * sc, 2 * sc);
+      
+      vertex(-3 * sc, -2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 2 * sc);
+      vertex(3 * sc, -2 * sc, 0);
+      
+      vertex(-3 * sc, -2 * sc, 2 * sc);
+      vertex(3 * sc, -2 * sc, 0);
+      vertex(3 * sc, -2 * sc, 2 * sc);
+  
+      endShape();
+      break;
+    case 2:
+      //draw boid
+      beginShape(kind);
+      
+      vertex(3 * sc, 0, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 0);
+  
+      vertex(3 * sc, 0, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, 0, 2 * sc);
+  
+      vertex(3 * sc, 0, 0);
+      vertex(-3 * sc, 0, 2 * sc);
+      vertex(-3 * sc, -2 * sc, 0);
+      
+      //------------------------------
+      
+      vertex(-6 * sc, 0, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, -2 * sc, 0);
+  
+      vertex(-6 * sc, 0, 0);
+      vertex(-3 * sc, 2 * sc, 0);
+      vertex(-3 * sc, 0, 2 * sc);
+  
+      vertex(-6 * sc, 0, 0);
+      vertex(-3 * sc, 0, 2 * sc);
+      vertex(-3 * sc, -2 * sc, 0);
+  
+      endShape();
+      break;
+    }
 
-    //draw boid
-    beginShape(kind);
-    vertex(3 * sc, 0, 0);
-    vertex(-3 * sc, 2 * sc, 0);
-    vertex(-3 * sc, -2 * sc, 0);
-
-    vertex(3 * sc, 0, 0);
-    vertex(-3 * sc, 2 * sc, 0);
-    vertex(-3 * sc, 0, 2 * sc);
-
-    vertex(3 * sc, 0, 0);
-    vertex(-3 * sc, 0, 2 * sc);
-    vertex(-3 * sc, -2 * sc, 0);
-
-    vertex(-3 * sc, 0, 2 * sc);
-    vertex(-3 * sc, 2 * sc, 0);
-    vertex(-3 * sc, -2 * sc, 0);
-    endShape();
+    
 
     popStyle();
   }
