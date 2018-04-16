@@ -37,9 +37,10 @@ Máximo 3.
 
 Complete la tabla:
 
-| Integrante | github nick |
-|------------|-------------|
-|            |             |
+|   Integrante  | github nick |
+|---------------|-------------|
+| Lizzy Tengana | lizzyt10h   |
+| Jonatan Parra | jonatan360  |
 
 ## Entrega
 
